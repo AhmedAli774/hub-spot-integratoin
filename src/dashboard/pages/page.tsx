@@ -1,59 +1,55 @@
-import React, { type FC } from 'react';
+import React, { type FC, useEffect, useState } from 'react';
 import { dashboard } from '@wix/dashboard';
-import {
-  Button,
-  EmptyState,
-  Image,
-  Page,
-  TextButton,
-  WixDesignSystemProvider,
-} from '@wix/design-system';
+import { Page, Tabs, WixDesignSystemProvider } from '@wix/design-system';
 import '@wix/design-system/styles.global.css';
-import * as Icons from '@wix/wix-ui-icons-common';
-import wixLogo from './wix_logo.svg';
+import ConnectPage from '../connect/ConnectPage';
+import FieldMappingTable from '../mapping/FieldMappingTable';
+import SyncStatus from '../status/SyncStatus';
+import LeadCaptureForm from '../form/LeadCaptureForm';
 
-const Index: FC = () => {
+import LeadList from '../leads/LeadList';
+
+type TabId = 'connect' | 'mapping' | 'status' | 'capture' | 'leads';
+
+const TABS: Array<{ id: TabId; title: string }> = [
+  { id: 'connect', title: 'Connect' },
+  { id: 'mapping', title: 'Field Mapping' },
+  { id: 'status', title: 'Sync Status' },
+  { id: 'capture', title: 'Lead Capture' },
+  { id: 'leads', title: 'Leads' },
+];
+
+const DashboardPage: FC = () => {
+  const [activeTab, setActiveTab] = useState<TabId>('connect');
+
+  useEffect(() => {
+    dashboard.setPageTitle('HubSpot Integration');
+  }, []);
+
   return (
     <WixDesignSystemProvider features={{ newColorsBranding: true }}>
       <Page>
         <Page.Header
-          title="Dashboard Page"
-          subtitle="Add management capabilities to your app."
-          actionsBar={
-            <Button
-              onClick={() => {
-                dashboard.showToast({
-                  message: 'Your first toast message!',
-                });
-              }}
-              prefixIcon={<Icons.GetStarted />}
-            >
-              Show a toast
-            </Button>
-          }
+          title="HubSpot Integration"
+          subtitle="Sync your Wix contacts with HubSpot CRM"
         />
         <Page.Content>
-          <EmptyState
-            image={
-              <Image fit="contain" height="100px" src={wixLogo} transparent />
-            }
-            title="Start editing this dashboard page"
-            subtitle="Learn how to work with dashboard pages and how to add functionality to them using Wix APIs."
-            skin="page"
-          >
-            <TextButton
-              as="a"
-              href="https://dev.wix.com/docs/build-apps/develop-your-app/frameworks/wix-cli/supported-extensions/dashboard-extensions/dashboard-pages/add-dashboard-page-extensions-with-the-cli#add-dashboard-page-extensions-with-the-cli"
-              target="_blank"
-              prefixIcon={<Icons.ExternalLink />}
-            >
-              Dashboard pages documentation
-            </TextButton>
-          </EmptyState>
+          <Tabs
+            activeId={activeTab}
+            items={TABS}
+            onClick={(tab) => setActiveTab(tab.id as TabId)}
+          />
+          <div style={{ marginTop: 24 }}>
+            {activeTab === 'connect' && <ConnectPage />}
+            {activeTab === 'mapping' && <FieldMappingTable />}
+            {activeTab === 'status' && <SyncStatus />}
+            {activeTab === 'capture' && <LeadCaptureForm />}
+            {activeTab === 'leads' && <LeadList />}
+          </div>
         </Page.Content>
       </Page>
     </WixDesignSystemProvider>
   );
 };
 
-export default Index;
+export default DashboardPage;
