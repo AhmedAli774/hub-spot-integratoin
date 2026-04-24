@@ -16,6 +16,10 @@
  *   POST   /api/webhooks/hubspot  ← actual sync processing
  *   POST   /api/webhooks/wix      ← actual sync processing
  */
+import { readFileSync, existsSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join, extname } from 'path';
+const __dirname = dirname(fileURLToPath(import.meta.url));
 import http from 'http';
 import url from 'url';
 import 'dotenv/config';
