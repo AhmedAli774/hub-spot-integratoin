@@ -896,7 +896,48 @@ const server = http.createServer(async (req, res) => {
   const key = `${req.method} ${pathname}`;
   const handler = routes[key];
 
-  if (!handler) {
+ if (!handler) {
+    // Root route — serve dashboard HTML for Wix iframe
+    if (pathname === '/' || !pathname.startsWith('/api/')) {
+      res.writeHead(200, { 'Content-Type': 'text/html', 'Access-Control-Allow-Origin': '*' });
+      res.end(`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HubSpot Integration</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f4f5f7; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .card { background: white; border-radius: 12px; padding: 48px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); text-align: center; max-width: 480px; width: 90%; }
+    .logo { font-size: 48px; margin-bottom: 16px; }
+    h1 { color: #1a1a2e; font-size: 24px; margin-bottom: 8px; }
+    p { color: #6b7280; font-size: 15px; line-height: 1.6; margin-bottom: 24px; }
+    .badge { display: inline-block; background: #dcfce7; color: #166534; padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 24px; }
+    .api-list { background: #f8f9fa; border-radius: 8px; padding: 16px; text-align: left; }
+    .api-list p { color: #374151; font-size: 13px; margin-bottom: 4px; font-family: monospace; }
+    .api-list p:last-child { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">🔗</div>
+    <h1>HubSpot Integration</h1>
+    <div class="badge">✅ Server Running</div>
+    <p>This backend powers your Wix ↔ HubSpot integration. Open the app from your <strong>Wix Dashboard</strong> to manage contacts and sync settings.</p>
+    <div class="api-list">
+      <p>GET  /api/auth/status</p>
+      <p>GET  /api/auth/connect</p>
+      <p>POST /api/sync/trigger</p>
+      <p>GET  /api/leads</p>
+      <p>POST /api/forms/submit</p>
+    </div>
+  </div>
+</body>
+</html>`);
+      return;
+    }
+
     res.writeHead(404, CORS_HEADERS);
     res.end(JSON.stringify({ error: 'Not found', path: pathname }));
     return;
