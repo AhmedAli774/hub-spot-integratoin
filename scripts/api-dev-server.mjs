@@ -903,36 +903,227 @@ const server = http.createServer(async (req, res) => {
       res.end(`<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HubSpot Integration</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f4f5f7; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-    .card { background: white; border-radius: 12px; padding: 48px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); text-align: center; max-width: 480px; width: 90%; }
-    .logo { font-size: 48px; margin-bottom: 16px; }
-    h1 { color: #1a1a2e; font-size: 24px; margin-bottom: 8px; }
-    p { color: #6b7280; font-size: 15px; line-height: 1.6; margin-bottom: 24px; }
-    .badge { display: inline-block; background: #dcfce7; color: #166534; padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 24px; }
-    .api-list { background: #f8f9fa; border-radius: 8px; padding: 16px; text-align: left; }
-    .api-list p { color: #374151; font-size: 13px; margin-bottom: 4px; font-family: monospace; }
-    .api-list p:last-child { margin-bottom: 0; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HubSpot Integration</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f4f5f7;color:#1a1a2e;min-height:100vh}
+.header{background:#fff;border-bottom:1px solid #e5e7eb;padding:16px 24px;display:flex;align-items:center;gap:12px}
+.header h1{font-size:18px;font-weight:600;color:#1a1a2e}
+.badge{background:#dcfce7;color:#166534;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px}
+.badge.disconnected{background:#fee2e2;color:#991b1b}
+.tabs{display:flex;background:#fff;border-bottom:1px solid #e5e7eb;padding:0 24px}
+.tab{padding:12px 16px;font-size:14px;font-weight:500;color:#6b7280;cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s}
+.tab.active{color:#ff7a59;border-bottom-color:#ff7a59}
+.tab:hover{color:#ff7a59}
+.content{padding:24px;max-width:900px}
+.section{display:none}
+.section.active{display:block}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;margin-bottom:16px}
+.card h2{font-size:16px;font-weight:600;margin-bottom:8px}
+.card p{font-size:14px;color:#6b7280;margin-bottom:16px}
+.btn{padding:10px 20px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;border:none;transition:all 0.2s}
+.btn-primary{background:#ff7a59;color:#fff}
+.btn-primary:hover{background:#e8644a}
+.btn-danger{background:#fee2e2;color:#991b1b;border:1px solid #fca5a5}
+.btn-danger:hover{background:#fecaca}
+.btn-secondary{background:#f3f4f6;color:#374151;border:1px solid #e5e7eb}
+.btn-secondary:hover{background:#e5e7eb}
+.btn:disabled{opacity:0.5;cursor:not-allowed}
+.status-row{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.dot{width:10px;height:10px;border-radius:50%;background:#d1d5db}
+.dot.green{background:#22c55e}
+.dot.red{background:#ef4444}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;padding:10px 12px;background:#f9fafb;font-weight:500;color:#6b7280;border-bottom:1px solid #e5e7eb}
+td{padding:10px 12px;border-bottom:1px solid #f3f4f6;color:#374151}
+tr:last-child td{border-bottom:none}
+select,input{padding:8px 10px;border:1px solid #e5e7eb;border-radius:6px;font-size:13px;color:#374151;background:#fff;width:100%}
+select:focus,input:focus{outline:none;border-color:#ff7a59}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.alert{padding:12px 16px;border-radius:8px;font-size:13px;margin-bottom:16px}
+.alert.success{background:#dcfce7;color:#166534}
+.alert.error{background:#fee2e2;color:#991b1b}
+.sync-log{font-size:12px;padding:8px 12px;border-left:3px solid #e5e7eb;margin-bottom:6px;background:#f9fafb;border-radius:0 6px 6px 0}
+.sync-log.synced{border-left-color:#22c55e}
+.sync-log.error{border-left-color:#ef4444}
+.sync-log.skipped{border-left-color:#f59e0b}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:13px;font-weight:500;color:#374151;margin-bottom:6px}
+.edit-btn{padding:4px 10px;font-size:12px;border-radius:4px;background:#eff6ff;color:#1d4ed8;border:none;cursor:pointer}
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid #e5e7eb;border-top-color:#ff7a59;border-radius:50%;animation:spin 0.7s linear infinite;vertical-align:middle}
+@keyframes spin{to{transform:rotate(360deg)}}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:100;align-items:center;justify-content:center}
+.overlay.open{display:flex}
+.modal-box{background:#fff;border-radius:12px;padding:24px;width:400px;max-width:90vw}
+.modal-box h3{font-size:16px;font-weight:600;margin-bottom:16px}
+.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:20px}
+</style>
 </head>
 <body>
-  <div class="card">
-    <div class="logo">🔗</div>
-    <h1>HubSpot Integration</h1>
-    <div class="badge">✅ Server Running</div>
-    <p>This backend powers your Wix ↔ HubSpot integration. Open the app from your <strong>Wix Dashboard</strong> to manage contacts and sync settings.</p>
-    <div class="api-list">
-      <p>GET  /api/auth/status</p>
-      <p>GET  /api/auth/connect</p>
-      <p>POST /api/sync/trigger</p>
-      <p>GET  /api/leads</p>
-      <p>POST /api/forms/submit</p>
+<div class="header">
+  <span style="font-size:20px">&#128279;</span>
+  <h1>HubSpot Integration</h1>
+  <span class="badge disconnected" id="conn-badge">Checking...</span>
+</div>
+<div class="tabs">
+  <div class="tab active" onclick="switchTab('connect')">Connect</div>
+  <div class="tab" onclick="switchTab('mapping')">Field Mapping</div>
+  <div class="tab" onclick="switchTab('sync')">Sync Status</div>
+  <div class="tab" onclick="switchTab('form')">Lead Capture</div>
+  <div class="tab" onclick="switchTab('leads')">Leads</div>
+</div>
+<div class="content">
+  <div class="section active" id="tab-connect">
+    <div class="card">
+      <h2>HubSpot Connection</h2>
+      <p>Connect your HubSpot account to enable bi-directional contact sync.</p>
+      <div class="status-row">
+        <div class="dot" id="conn-dot"></div>
+        <span id="conn-text" style="font-size:14px;font-weight:500">Checking...</span>
+      </div>
+      <div id="conn-expires" style="font-size:12px;color:#6b7280;margin-bottom:16px;display:none"></div>
+      <button class="btn btn-primary" id="btn-connect" onclick="connectHubspot()">Connect HubSpot</button>
+      <button class="btn btn-danger" id="btn-disconnect" onclick="disconnectHubspot()" style="display:none;margin-left:8px">Disconnect</button>
+    </div>
+    <div class="card">
+      <h2>About this integration</h2>
+      <p>This app provides:</p>
+      <ul style="font-size:14px;color:#6b7280;line-height:2;padding-left:20px">
+        <li>Bi-directional contact sync (Wix to HubSpot)</li>
+        <li>Configurable field mapping</li>
+        <li>Form submissions with UTM attribution</li>
+        <li>Loop prevention and conflict resolution</li>
+        <li>OAuth 2.0 secure connection</li>
+      </ul>
     </div>
   </div>
+  <div class="section" id="tab-mapping">
+    <div class="card">
+      <h2>Field Mapping</h2>
+      <p>Map Wix contact fields to HubSpot properties. Changes apply on next sync.</p>
+      <div id="mapping-alert"></div>
+      <table>
+        <thead><tr><th>Wix Field</th><th>HubSpot Property</th><th>Direction</th><th></th></tr></thead>
+        <tbody id="mapping-body"><tr><td colspan="4" style="text-align:center;color:#6b7280">Loading...</td></tr></tbody>
+      </table>
+      <div style="margin-top:16px;padding-top:16px;border-top:1px solid #e5e7eb">
+        <div class="grid3">
+          <input id="new-wix" placeholder="Wix field (e.g. name.first)">
+          <input id="new-hs" placeholder="HubSpot property (e.g. firstname)">
+          <select id="new-dir">
+            <option value="bidirectional">Bidirectional</option>
+            <option value="wix-to-hubspot">Wix to HubSpot</option>
+            <option value="hubspot-to-wix">HubSpot to Wix</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" onclick="addMapping()">Add Mapping</button>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="tab-sync">
+    <div class="card">
+      <h2>Sync Control</h2>
+      <p>Trigger a manual bi-directional sync between Wix and HubSpot.</p>
+      <div id="sync-alert"></div>
+      <button class="btn btn-primary" id="btn-sync" onclick="triggerSync()">Trigger Sync Now</button>
+      <div id="sync-result" style="margin-top:16px;display:none">
+        <div class="grid3" style="gap:8px">
+          <div style="background:#f0fdf4;border-radius:8px;padding:12px;text-align:center">
+            <div style="font-size:22px;font-weight:600;color:#166534" id="r-synced">0</div>
+            <div style="font-size:11px;color:#166534">Synced</div>
+          </div>
+          <div style="background:#fffbeb;border-radius:8px;padding:12px;text-align:center">
+            <div style="font-size:22px;font-weight:600;color:#92400e" id="r-skipped">0</div>
+            <div style="font-size:11px;color:#92400e">Skipped</div>
+          </div>
+          <div style="background:#fef2f2;border-radius:8px;padding:12px;text-align:center">
+            <div style="font-size:22px;font-weight:600;color:#991b1b" id="r-errors">0</div>
+            <div style="font-size:11px;color:#991b1b">Errors</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Sync Logs</h2>
+      <p style="margin-bottom:12px">Recent sync events</p>
+      <button class="btn btn-secondary" onclick="loadLogs()" style="margin-bottom:12px;font-size:12px;padding:6px 12px">Refresh Logs</button>
+      <div id="log-list"><p style="font-size:13px;color:#6b7280">Click refresh to load logs.</p></div>
+    </div>
+  </div>
+  <div class="section" id="tab-form">
+    <div class="card">
+      <h2>Lead Capture Form</h2>
+      <p>Submit a lead directly to HubSpot with UTM attribution tracking.</p>
+      <div id="form-alert"></div>
+      <div class="form-group"><label>First Name</label><input id="f-first" placeholder="John"></div>
+      <div class="form-group"><label>Last Name</label><input id="f-last" placeholder="Smith"></div>
+      <div class="form-group"><label>Email *</label><input id="f-email" type="email" placeholder="john@example.com"></div>
+      <div class="form-group"><label>Phone</label><input id="f-phone" placeholder="+1 555 000 0000"></div>
+      <div class="form-group"><label>Company</label><input id="f-company" placeholder="Acme Inc"></div>
+      <div class="form-group"><label>Message</label><input id="f-message" placeholder="How can we help?"></div>
+      <div style="background:#f9fafb;border-radius:8px;padding:16px;margin-bottom:16px">
+        <p style="font-size:12px;font-weight:500;color:#6b7280;margin-bottom:10px">UTM Attribution (optional)</p>
+        <div class="grid2" style="gap:8px">
+          <div><label style="font-size:11px;color:#6b7280;display:block;margin-bottom:4px">utm_source</label><input id="u-source" placeholder="google"></div>
+          <div><label style="font-size:11px;color:#6b7280;display:block;margin-bottom:4px">utm_medium</label><input id="u-medium" placeholder="cpc"></div>
+          <div><label style="font-size:11px;color:#6b7280;display:block;margin-bottom:4px">utm_campaign</label><input id="u-campaign" placeholder="spring-sale"></div>
+          <div><label style="font-size:11px;color:#6b7280;display:block;margin-bottom:4px">utm_content</label><input id="u-content" placeholder="banner-a"></div>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="btn-form" onclick="submitForm()">Submit to HubSpot</button>
+    </div>
+  </div>
+  <div class="section" id="tab-leads">
+    <div class="card">
+      <h2>HubSpot Contacts</h2>
+      <p>View and edit contacts synced with HubSpot.</p>
+      <button class="btn btn-secondary" onclick="loadLeads()" style="margin-bottom:12px;font-size:12px;padding:6px 12px">Refresh</button>
+      <div style="overflow-x:auto">
+        <table>
+          <thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Company</th><th></th></tr></thead>
+          <tbody id="leads-body"><tr><td colspan="5" style="text-align:center;color:#6b7280">Click refresh to load.</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay" id="edit-modal">
+  <div class="modal-box">
+    <h3>Edit Contact</h3>
+    <input type="hidden" id="edit-id">
+    <div class="form-group"><label>First Name</label><input id="edit-first"></div>
+    <div class="form-group"><label>Last Name</label><input id="edit-last"></div>
+    <div class="form-group"><label>Phone</label><input id="edit-phone"></div>
+    <div class="form-group"><label>Company</label><input id="edit-company"></div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="saveContact()">Save</button>
+    </div>
+  </div>
+</div>
+<script>
+const API=window.location.origin;
+async function api(m,p,b){const o={method:m,headers:{'Content-Type':'application/json'}};if(b)o.body=JSON.stringify(b);const r=await fetch(API+p,o);return r.json();}
+function showAlert(id,msg,type){const el=document.getElementById(id);el.innerHTML='<div class="alert '+type+'">'+msg+'</div>';setTimeout(()=>{el.innerHTML='';},5000);}
+function switchTab(name){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));const tabs=['connect','mapping','sync','form','leads'];document.querySelectorAll('.tab')[tabs.indexOf(name)].classList.add('active');document.getElementById('tab-'+name).classList.add('active');if(name==='mapping')loadMappings();if(name==='leads')loadLeads();if(name==='sync')loadLogs();}
+async function checkStatus(){try{const d=await api('GET','/api/auth/status');const badge=document.getElementById('conn-badge');const dot=document.getElementById('conn-dot');const text=document.getElementById('conn-text');const exp=document.getElementById('conn-expires');const btnC=document.getElementById('btn-connect');const btnD=document.getElementById('btn-disconnect');if(d.connected){badge.textContent='Connected';badge.className='badge';dot.className='dot green';text.textContent='HubSpot Connected';if(d.expiresAt){exp.textContent='Token expires: '+new Date(d.expiresAt).toLocaleString();exp.style.display='block';}btnC.style.display='none';btnD.style.display='inline-block';}else{badge.textContent='Disconnected';badge.className='badge disconnected';dot.className='dot red';text.textContent='Not connected';exp.style.display='none';btnC.style.display='inline-block';btnD.style.display='none';}}catch(e){console.error(e);}}
+async function connectHubspot(){const d=await api('GET','/api/auth/connect');if(d.url){const w=window.open(d.url,'_blank','width=600,height=700');const t=setInterval(()=>{if(w.closed){clearInterval(t);setTimeout(checkStatus,1500);}},500);}}
+async function disconnectHubspot(){if(!confirm('Disconnect HubSpot? Sync will stop.'))return;await api('POST','/api/auth/disconnect');checkStatus();}
+async function loadMappings(){const d=await api('GET','/api/mappings');const tbody=document.getElementById('mapping-body');if(!d.mappings||d.mappings.length===0){tbody.innerHTML='<tr><td colspan="4" style="text-align:center;color:#6b7280">No mappings yet.</td></tr>';return;}tbody.innerHTML=d.mappings.map(m=>'<tr><td>'+m.wixField+'</td><td>'+m.hubspotProperty+'</td><td>'+(m.direction||'bidirectional')+'</td><td>'+(m.required?'<span style="font-size:11px;color:#6b7280">Required</span>':'<button class="edit-btn" onclick="deleteMapping(\''+m.id+'\')">Remove</button>')+'</td></tr>').join('');}
+async function addMapping(){const wixField=document.getElementById('new-wix').value.trim();const hubspotProperty=document.getElementById('new-hs').value.trim();const direction=document.getElementById('new-dir').value;if(!wixField||!hubspotProperty){showAlert('mapping-alert','Both fields are required.','error');return;}const d=await api('POST','/api/mappings',{wixField,hubspotProperty,direction});if(d.error){showAlert('mapping-alert',d.error,'error');return;}document.getElementById('new-wix').value='';document.getElementById('new-hs').value='';showAlert('mapping-alert','Mapping saved!','success');loadMappings();}
+async function deleteMapping(id){await api('DELETE','/api/mappings?id='+id);loadMappings();}
+async function triggerSync(){const btn=document.getElementById('btn-sync');btn.innerHTML='<span class="spinner"></span> Syncing...';btn.disabled=true;document.getElementById('sync-result').style.display='none';try{const d=await api('POST','/api/sync/trigger');if(d.error){showAlert('sync-alert',d.error,'error');return;}document.getElementById('r-synced').textContent=d.summary.synced;document.getElementById('r-skipped').textContent=d.summary.skipped;document.getElementById('r-errors').textContent=d.summary.errors;document.getElementById('sync-result').style.display='block';showAlert('sync-alert','Sync completed - '+d.summary.total+' contacts processed.','success');loadLogs();}catch(e){showAlert('sync-alert','Sync failed: '+e.message,'error');}finally{btn.innerHTML='Trigger Sync Now';btn.disabled=false;}}
+async function loadLogs(){const d=await api('GET','/api/sync/logs');const el=document.getElementById('log-list');if(!d.logs||d.logs.length===0){el.innerHTML='<p style="font-size:13px;color:#6b7280">No sync logs yet.</p>';return;}el.innerHTML=d.logs.slice(0,20).map(l=>'<div class="sync-log '+l.status+'"><span style="font-weight:500">'+l.direction+'</span> &nbsp; <span style="color:#6b7280">'+l.status+'</span> &nbsp; '+(l.detail||'')+'<br><span style="font-size:10px;color:#9ca3af">'+new Date(l.ts).toLocaleString()+'</span></div>').join('');}
+async function submitForm(){const email=document.getElementById('f-email').value.trim();if(!email){showAlert('form-alert','Email is required.','error');return;}const btn=document.getElementById('btn-form');btn.innerHTML='<span class="spinner"></span> Submitting...';btn.disabled=true;const body={formFields:{firstName:document.getElementById('f-first').value,lastName:document.getElementById('f-last').value,email,phone:document.getElementById('f-phone').value,company:document.getElementById('f-company').value,message:document.getElementById('f-message').value},utmParams:{utm_source:document.getElementById('u-source').value,utm_medium:document.getElementById('u-medium').value,utm_campaign:document.getElementById('u-campaign').value,utm_content:document.getElementById('u-content').value},pageUrl:window.location.href,referrer:document.referrer};try{const d=await api('POST','/api/forms/submit',body);if(d.error){showAlert('form-alert',d.error,'error');return;}showAlert('form-alert','Lead submitted! HubSpot ID: '+d.hubspotId,'success');['f-first','f-last','f-email','f-phone','f-company','f-message','u-source','u-medium','u-campaign','u-content'].forEach(id=>document.getElementById(id).value='');}catch(e){showAlert('form-alert','Submit failed: '+e.message,'error');}finally{btn.innerHTML='Submit to HubSpot';btn.disabled=false;}}
+async function loadLeads(){const tbody=document.getElementById('leads-body');tbody.innerHTML='<tr><td colspan="5" style="text-align:center"><span class="spinner"></span></td></tr>';try{const d=await api('GET','/api/leads');if(d.error){tbody.innerHTML='<tr><td colspan="5" style="color:#991b1b;text-align:center">'+d.error+'</td></tr>';return;}if(!d.leads||d.leads.length===0){tbody.innerHTML='<tr><td colspan="5" style="text-align:center;color:#6b7280">No contacts found.</td></tr>';return;}tbody.innerHTML=d.leads.map(c=>{const p=c.properties||{};return'<tr><td>'+(p.firstname||'')+' '+(p.lastname||'')+'</td><td>'+(p.email||'&mdash;')+'</td><td>'+(p.phone||'&mdash;')+'</td><td>'+(p.company||'&mdash;')+'</td><td><button class="edit-btn" onclick="openEdit(\''+c.id+'\',\''+(p.firstname||'')+'\',\''+(p.lastname||'')+'\',\''+(p.phone||'')+'\',\''+(p.company||'')+'\')">Edit</button></td></tr>';}).join('');}catch(e){tbody.innerHTML='<tr><td colspan="5" style="color:#991b1b">Error loading leads.</td></tr>';}}
+function openEdit(id,first,last,phone,company){document.getElementById('edit-id').value=id;document.getElementById('edit-first').value=first;document.getElementById('edit-last').value=last;document.getElementById('edit-phone').value=phone;document.getElementById('edit-company').value=company;document.getElementById('edit-modal').classList.add('open');}
+function closeModal(){document.getElementById('edit-modal').classList.remove('open');}
+async function saveContact(){const id=document.getElementById('edit-id').value;const properties={firstname:document.getElementById('edit-first').value,lastname:document.getElementById('edit-last').value,phone:document.getElementById('edit-phone').value,company:document.getElementById('edit-company').value};const d=await api('PATCH','/api/leads',{id,properties});closeModal();if(d.success)loadLeads();}
+checkStatus();
+</script>
 </body>
 </html>`);
       return;
