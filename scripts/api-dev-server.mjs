@@ -21,7 +21,7 @@ import url from 'url';
 import 'dotenv/config';
 import { store, logStore } from './dev-store.mjs';
 
-const PORT = 4321;
+const PORT = process.env.PORT || 4321;
 const HUBSPOT_TOKEN_URL = 'https://api.hubapi.com/oauth/v1/token';
 const HUBSPOT_CONTACTS_URL = 'https://api.hubapi.com/crm/v3/objects/contacts';
 const HUBSPOT_PROPERTIES_URL = 'https://api.hubapi.com/crm/v3/properties/contacts';
@@ -913,8 +913,7 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, '127.0.0.1', () => {
-  console.log(`\nDev API server ready on :${PORT}`);
-  console.log(`  Serving Astro API routes for local development\n`);
+server.listen(PORT, "0.0.0.0", () => {
+  console.log("Dev API server running on:", PORT);
 });
 

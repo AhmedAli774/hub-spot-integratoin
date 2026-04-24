@@ -503,6 +503,2456 @@
       "contactId": "wix_1777028927942",
       "detail": "Synced to HubSpot contact 476292583103",
       "_createdDate": "2026-04-24T11:18:52.931Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:23:48.004Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:23:48.020Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:23:48.036Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:23:48.056Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:23:48.072Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:23:48.090Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:23:48.107Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:23:48.128Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:23:48.141Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:23:48.157Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:23:48.174Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:23:48.187Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T11:23:48.661Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T11:23:49.033Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T11:23:49.481Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T11:23:49.887Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T11:23:50.298Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T11:23:50.650Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T11:23:51.118Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T11:23:51.472Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T11:23:52.450Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T11:23:53.269Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T11:23:53.782Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T11:23:54.189Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:28:47.995Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:28:48.015Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:28:48.035Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:28:48.051Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:28:48.069Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:28:48.085Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:28:48.126Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:28:48.142Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:28:48.159Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:28:48.176Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:28:48.192Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:28:48.207Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T11:28:48.696Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T11:28:49.549Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T11:28:50.002Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T11:28:50.437Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T11:28:50.847Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T11:28:51.166Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T11:28:51.479Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T11:28:51.800Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T11:28:52.176Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T11:28:52.485Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T11:28:52.898Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T11:28:53.228Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:33:48.942Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:33:48.958Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:33:48.972Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:33:48.990Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:33:49.006Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:33:49.022Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:33:49.037Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:33:49.054Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:33:49.066Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:33:49.082Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:33:49.111Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:33:49.128Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T11:33:49.537Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T11:33:49.956Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T11:33:50.363Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T11:33:50.883Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T11:33:51.901Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T11:33:52.311Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T11:33:52.723Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T11:33:53.130Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T11:33:53.643Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T11:33:54.064Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T11:33:54.460Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T11:33:54.871Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:38:47.941Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:38:47.957Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:38:47.973Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:38:47.992Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:38:48.011Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:38:48.025Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:38:48.043Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:38:48.058Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:38:48.072Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:38:48.087Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:38:48.102Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:38:48.116Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T11:38:48.503Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T11:38:48.905Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T11:38:49.286Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T11:38:50.155Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T11:38:50.522Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T11:38:50.901Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T11:38:51.262Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T11:38:51.631Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T11:38:51.990Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T11:38:52.386Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T11:38:52.757Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T11:38:53.119Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:43:47.991Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:43:48.009Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:43:48.025Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:43:48.041Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:43:48.056Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:43:48.071Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "synced",
+      "contactId": "476210782927",
+      "detail": "Synced to Wix contact wix_1777028927872",
+      "_createdDate": "2026-04-24T11:43:48.093Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:43:48.110Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:43:48.122Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:43:48.135Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:43:48.145Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:43:48.159Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T11:43:49.143Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T11:43:49.696Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T11:43:50.072Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T11:43:50.540Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T11:43:50.924Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T11:43:51.357Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T11:43:51.731Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T11:43:52.108Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T11:43:52.484Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T11:43:52.896Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T11:43:53.302Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T11:43:53.675Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:48:47.980Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:48:47.997Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:48:48.015Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:48:48.036Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:48:48.053Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:48:48.069Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:48:48.086Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:48:48.101Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:48:48.118Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:48:48.134Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:48:48.151Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:48:48.166Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T11:48:48.543Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T11:48:48.913Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T11:48:49.302Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T11:48:49.664Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T11:48:50.072Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T11:48:50.427Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T11:48:50.823Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T11:48:51.195Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T11:48:51.567Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T11:48:51.957Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T11:48:52.902Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T11:48:53.269Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:53:48.007Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:53:48.026Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:53:48.042Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:53:48.058Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:53:48.076Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:53:48.094Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:53:48.131Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:53:48.144Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:53:48.162Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:53:48.176Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:53:48.191Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:53:48.206Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T11:53:48.660Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T11:53:49.072Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T11:53:49.438Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T11:53:49.907Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T11:53:50.316Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T11:53:50.705Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T11:53:51.116Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T11:53:51.516Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T11:53:51.936Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T11:53:52.292Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T11:53:52.656Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T11:53:53.063Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:58:48.092Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:58:48.111Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:58:48.131Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:58:48.148Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:58:48.166Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:58:48.181Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:58:48.198Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:58:48.232Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:58:48.249Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:58:48.268Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:58:48.284Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T11:58:48.300Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T11:58:48.692Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T11:58:49.205Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T11:58:50.129Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T11:58:50.550Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T11:58:51.050Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T11:58:51.560Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T11:58:52.074Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T11:58:52.468Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T11:58:52.851Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T11:58:53.220Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T11:58:53.714Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T11:58:54.087Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:03:48.632Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:03:48.649Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:03:48.667Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:03:48.684Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:03:48.700Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:03:48.716Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:03:48.730Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:03:48.747Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:03:48.766Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:03:48.785Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:03:48.800Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:03:48.816Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T12:03:49.211Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T12:03:49.651Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T12:03:50.020Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T12:03:50.430Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T12:03:50.918Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T12:03:51.345Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T12:03:51.724Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T12:03:52.113Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T12:03:52.556Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T12:03:53.027Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T12:03:53.540Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T12:03:53.949Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:08:48.017Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:08:48.031Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:08:48.044Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:08:48.056Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:08:48.070Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:08:48.082Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:08:48.095Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:08:48.111Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:08:48.121Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:08:48.135Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:08:48.152Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:08:48.168Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T12:08:48.679Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T12:08:49.071Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T12:08:49.579Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T12:08:50.140Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T12:08:50.708Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T12:08:51.133Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T12:08:51.533Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T12:08:52.042Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T12:08:52.451Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T12:08:52.856Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T12:08:53.269Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T12:08:54.214Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:13:48.088Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:13:48.108Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:13:48.125Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:13:48.146Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:13:48.165Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:13:48.186Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:13:48.208Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:13:48.225Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "synced",
+      "contactId": "476231856846",
+      "detail": "Synced to Wix contact wix_1777028927901",
+      "_createdDate": "2026-04-24T12:13:48.250Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:13:48.268Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:13:48.285Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:13:48.302Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T12:13:48.704Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T12:13:49.203Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T12:13:49.596Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T12:13:50.025Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T12:13:50.434Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T12:13:51.440Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T12:13:51.875Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T12:13:52.253Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T12:13:52.662Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T12:13:53.071Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T12:13:53.482Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T12:13:53.869Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:18:48.051Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:18:48.065Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:18:48.078Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:18:48.095Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:18:48.108Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:18:48.119Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:18:48.130Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:18:48.146Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:18:48.163Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:18:48.180Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:18:48.193Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:18:48.208Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T12:18:49.191Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T12:18:49.578Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T12:18:49.967Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T12:18:50.344Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T12:18:50.740Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T12:18:51.115Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T12:18:51.492Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T12:18:51.871Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T12:18:52.310Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T12:18:52.828Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T12:18:53.233Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T12:18:53.622Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:23:48.047Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:23:48.067Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:23:48.084Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:23:48.105Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "synced",
+      "contactId": "476184110837",
+      "detail": "Synced to Wix contact wix_1777028927842",
+      "_createdDate": "2026-04-24T12:23:48.131Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:23:48.149Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:23:48.165Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:23:48.179Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:23:48.194Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:23:48.209Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:23:48.223Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:23:48.240Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T12:23:48.862Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T12:23:50.127Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T12:23:50.604Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T12:23:50.998Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T12:23:51.370Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T12:23:51.830Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T12:23:52.346Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T12:23:52.753Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T12:23:53.141Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T12:23:53.576Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T12:23:53.950Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T12:23:54.389Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:28:47.979Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:28:47.995Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095440586",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:28:48.007Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:28:48.022Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:28:48.037Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:28:48.049Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:28:48.063Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:28:48.077Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:28:48.091Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:28:48.106Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:28:48.119Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:28:48.135Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T12:28:48.496Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T12:28:48.893Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927815",
+      "detail": "Synced to HubSpot contact 476095440586",
+      "_createdDate": "2026-04-24T12:28:49.407Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927826",
+      "detail": "Synced to HubSpot contact 476095482591",
+      "_createdDate": "2026-04-24T12:28:49.818Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927842",
+      "detail": "Synced to HubSpot contact 476184110837",
+      "_createdDate": "2026-04-24T12:28:50.232Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927859",
+      "detail": "Synced to HubSpot contact 476184233690",
+      "_createdDate": "2026-04-24T12:28:50.568Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927872",
+      "detail": "Synced to HubSpot contact 476210782927",
+      "_createdDate": "2026-04-24T12:28:50.940Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927886",
+      "detail": "Synced to HubSpot contact 476217668325",
+      "_createdDate": "2026-04-24T12:28:51.351Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927901",
+      "detail": "Synced to HubSpot contact 476231856846",
+      "_createdDate": "2026-04-24T12:28:52.331Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927915",
+      "detail": "Synced to HubSpot contact 476232231654",
+      "_createdDate": "2026-04-24T12:28:52.784Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927929",
+      "detail": "Synced to HubSpot contact 476250224358",
+      "_createdDate": "2026-04-24T12:28:53.194Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927942",
+      "detail": "Synced to HubSpot contact 476292583103",
+      "_createdDate": "2026-04-24T12:28:53.603Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475627236065",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:33:48.763Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "475642911428",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:33:48.773Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "synced",
+      "contactId": "476095440586",
+      "detail": "Synced to Wix contact wix_1777028927815",
+      "_createdDate": "2026-04-24T12:33:48.784Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476095482591",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:33:48.795Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184110837",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:33:48.804Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476184233690",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:33:48.812Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476210782927",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:33:48.819Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476217668325",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:33:48.825Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476231856846",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:33:48.835Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476232231654",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:33:48.845Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476250224358",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:33:48.853Z"
+    },
+    {
+      "source": "hubspot-to-wix",
+      "status": "skipped",
+      "contactId": "476292583103",
+      "detail": "wix_newer",
+      "_createdDate": "2026-04-24T12:33:48.866Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927785",
+      "detail": "Synced to HubSpot contact 475627236065",
+      "_createdDate": "2026-04-24T12:33:49.239Z"
+    },
+    {
+      "source": "wix-to-hubspot",
+      "status": "synced",
+      "contactId": "wix_1777028927802",
+      "detail": "Synced to HubSpot contact 475642911428",
+      "_createdDate": "2026-04-24T12:33:49.640Z"
     }
   ]
 }
