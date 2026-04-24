@@ -1105,7 +1105,7 @@ select:focus,input:focus{outline:none;border-color:#ff7a59}
   </div>
 </div>
 <script>
-const API=window.location.origin;
+const API='https://hub-spot-integratoin.onrender.com';
 async function api(m,p,b){const o={method:m,headers:{'Content-Type':'application/json'}};if(b)o.body=JSON.stringify(b);const r=await fetch(API+p,o);return r.json();}
 function showAlert(id,msg,type){const el=document.getElementById(id);el.innerHTML='<div class="alert '+type+'">'+msg+'</div>';setTimeout(()=>{el.innerHTML='';},5000);}
 function switchTab(name){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));const tabs=['connect','mapping','sync','form','leads'];document.querySelectorAll('.tab')[tabs.indexOf(name)].classList.add('active');document.getElementById('tab-'+name).classList.add('active');if(name==='mapping')loadMappings();if(name==='leads')loadLeads();if(name==='sync')loadLogs();}
