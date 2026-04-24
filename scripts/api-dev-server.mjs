@@ -899,7 +899,24 @@ const server = http.createServer(async (req, res) => {
   const pathname = req.url.split('?')[0];
   const key = `${req.method} ${pathname}`;
   const handler = routes[key];
-
+// Serve dist/statics files
+  if (pathname.startsWith('/statics/')) {
+    const filePath = join(__dirname, '..', 'dist', pathname);
+    if (existsSync(filePath)) {
+      const ext = extname(filePath);
+      const mime = {
+        '.js': 'application/javascript',
+        '.css': 'text/css',
+        '.html': 'text/html',
+        '.json': 'application/json',
+        '.png': 'image/png',
+        '.svg': 'image/svg+xml',
+      }[ext] || 'text/plain';
+      res.writeHead(200, { 'Content-Type': mime, 'Access-Control-Allow-Origin': '*' });
+      res.end(readFileSync(filePath));
+      return;
+    }
+  }
  if (!handler) {
     // Root route — serve dashboard HTML for Wix iframe
     if (pathname === '/' || !pathname.startsWith('/api/')) {
