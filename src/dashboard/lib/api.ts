@@ -10,7 +10,7 @@ export const API_BASE: string = (() => {
       return c.trim().replace(/\/$/, '');
     }
   }
-  return 'https://quilt-irregular-squabble.ngrok-free.dev';
+  return '';
 })();
 
 export function apiUrl(path: string): string {

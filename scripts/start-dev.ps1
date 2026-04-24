@@ -2,17 +2,36 @@
 # Architecture:
 #   npm run dev  -> Wix CLI (Vite dashboard bundle on :5173) + Astro API routes on :4321
 #   dev-proxy    -> port 5175: /api/* -> :4321, rest -> :5173
-#   ngrok        -> https://quilt-irregular-squabble.ngrok-free.dev -> :5175
+#   ngrok        -> https://<your-domain>.ngrok-free.dev -> :5175
 
 param(
   [int]$ProxyPort   = 5175,
   [int]$VitePort    = 5173,
   [int]$AstroPort   = 4321,
   [int]$WaitSeconds = 45,
-  [string]$NgrokDomain = "quilt-irregular-squabble.ngrok-free.dev"
+  [string]$NgrokDomain = $null
 )
 
 $Root = Split-Path $PSScriptRoot -Parent
+
+# If NgrokDomain not provided via parameter, try to read from .env
+if (-not $NgrokDomain) {
+  $envFile = Join-Path $Root ".env"
+  if (Test-Path $envFile) {
+    $envContent = Get-Content $envFile -Raw
+    $match = [regex]::Match($envContent, 'PUBLIC_API_BASE=https://(.+)')
+    if ($match.Success) {
+      $NgrokDomain = $match.Groups[1].Value.Trim()
+    }
+  }
+}
+
+# Validate we have a domain
+if (-not $NgrokDomain) {
+  Write-Host "  ERROR: NgrokDomain not provided and not found in .env file." -ForegroundColor Red
+  Write-Host "  Either pass -NgrokDomain parameter or set PUBLIC_API_BASE in .env" -ForegroundColor Yellow
+  exit 1
+}
 
 function Write-Header {
   Write-Host ""
@@ -65,7 +84,7 @@ Start-Sleep 2
 # Start Wix dev server
 Write-Host "  Starting Wix dev server (npm run dev)..." -ForegroundColor Yellow
 Start-Process -FilePath "powershell.exe" `
-  -ArgumentList "-NoExit", "-Command", "Set-Location '$Root'; npm run dev"
+  -ArgumentList "-NoExit", "-Command", "Set-Location '$Root'; npm run dev -- --origin https://$NgrokDomain"
 
 Write-Host "  Waiting $WaitSeconds s for Vite dev server (port $VitePort) ..." -ForegroundColor DarkGray
 Start-Sleep $WaitSeconds

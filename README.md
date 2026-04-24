@@ -12,14 +12,10 @@ A production-ready Wix CLI app that provides **bi-directional contact sync** bet
 
 1. [Features](#features)
 2. [Architecture](#architecture)
-3. [Screenshots](#screenshots)
-4. [Quick Start](#quick-start)
+3. [Quick Start (Step-by-Step)](#quick-start-step-by-step)
+4. [How to Update Forms](#how-to-update-forms)
 5. [API Plan](#api-plan)
 6. [How It Works](#how-it-works)
-   - [OAuth Flow](#oauth-flow)
-   - [Bi-Directional Sync](#bi-directional-sync)
-   - [Loop Prevention](#loop-prevention)
-   - [Form Capture with UTM](#form-capture-with-utm)
 7. [Project Structure](#project-structure)
 8. [Environment Variables](#environment-variables)
 9. [Setup Guide](#setup-guide)
@@ -93,35 +89,37 @@ A production-ready Wix CLI app that provides **bi-directional contact sync** bet
 
 ---
 
-## 📸 Screenshots
+## 🚀 Quick Start (Step-by-Step)
 
-> Screenshots are included in the repository root (e.g., `Screenshot 2026-04-24 132551.png`)
-
-| Feature | Screenshot |
-|---------|-----------|
-| Dashboard Tabs | `Screenshot 2026-04-23 174106.png` |
-| HubSpot Connection | `Screenshot 2026-04-23 174458.png` |
-| Field Mapping UI | `Screenshot 2026-04-23 175519.png` |
-| Sync Status | `Screenshot 2026-04-23 213959.png` |
-| Lead Capture Form | `Screenshot 2026-04-24 073121.png` |
-| UTM Attribution | `Screenshot 2026-04-24 073428.png` |
-| Leads Table | `Screenshot 2026-04-24 073454.png` |
-| Edit Lead Modal | `Screenshot 2026-04-24 074208.png` |
-| Edit Lead Success | `Screenshot 2026-04-24 074225.png` |
-| Form Submission | `Screenshot 2026-04-24 074814.png` |
-| Lead List Header | `Screenshot 2026-04-24 132551.png` |
+### Prerequisites
+- Node.js 18+ installed
+- Wix developer account
+- HubSpot developer account with OAuth app
+- ngrok account (free tier works)
 
 ---
 
-## 🚀 Quick Start
+### Step 1: Install ngrok
 
-### Prerequisites
-- Node.js 18+
-- Wix developer account
-- HubSpot developer account with OAuth app
-- ngrok account (for local dev tunnel)
+**Windows (PowerShell):**
+```powershell
+# Download and install ngrok
+choco install ngrok
+# OR download from https://ngrok.com/download
 
-### 1. Clone & Install
+# Add your auth token (get from https://dashboard.ngrok.com)
+ngrok config add-authtoken YOUR_NGROK_AUTH_TOKEN
+```
+
+**Verify installation:**
+```powershell
+ngrok version
+# Should show: ngrok version 3.x.x
+```
+
+---
+
+### Step 2: Clone & Install
 
 ```bash
 git clone <repo-url>
@@ -129,9 +127,11 @@ cd hub-spot-integration
 npm install
 ```
 
-### 2. Configure Environment
+---
 
-Create `.env` file:
+### Step 3: Configure Environment
+
+Create `.env` file in the root folder (`hub-spot-integration/.env`):
 
 ```env
 HUBSPOT_CLIENT_ID=your-hubspot-client-id
@@ -141,28 +141,187 @@ PUBLIC_API_BASE=https://your-ngrok-domain.ngrok-free.dev
 HUBSPOT_APP_ID=your-hubspot-app-id
 ```
 
-### 3. Run Development Server
+> **Note:** Replace `your-ngrok-domain` with your actual ngrok static domain (e.g., `quilt-irregular-squabble.ngrok-free.dev`)
+
+---
+
+### Step 4: Start Development Server
+
+Open **PowerShell** in the project root folder and run:
 
 ```powershell
-# Windows PowerShell
 .\scripts\start-dev.ps1
 ```
 
-This starts:
-- Wix CLI dev server (Vite bundle on :5173 + Astro API on :4321)
-- Dev proxy (:5175) — unifies Vite + Astro behind one port
-- ngrok tunnel — exposes `https://your-domain.ngrok-free.dev` → :5175
+---
 
-### 4. Open Dashboard
+### Step 5: What Happens After You Run the Command?
 
-Press `1` in the Wix CLI terminal to open the dashboard.
+When you run `.\scripts\start-dev.ps1`, **3 PowerShell windows** will open automatically:
 
-### 5. Connect HubSpot
+| Window | What It Runs | Port | Purpose |
+|--------|-------------|------|---------|
+| **Window 1** | API Server (`api-dev-server.mjs`) | `:4321` | Backend API routes (OAuth, webhooks, sync) |
+| **Window 2** | Dev Proxy (`dev-proxy.mjs`) | `:5175` | Unifies Vite + Astro into one port |
+| **Window 3** | Wix CLI (`npm run dev`) | `:5173` | Dashboard UI development server |
 
-1. Go to **Connect** tab
-2. Click **Connect HubSpot**
-3. Authorize in popup
-4. Status changes to ✅ **Connected**
+**Plus:** ngrok starts in the background and creates a public URL like:
+```
+https://your-domain.ngrok-free.dev → localhost:5175
+```
+
+**You will see this in your main PowerShell window:**
+```
+============================================
+  NGROK TUNNEL IS LIVE
+============================================
+
+  Public URL : https://your-domain.ngrok-free.dev
+  Proxy      : http://127.0.0.1:5175
+  ngrok UI   : http://127.0.0.1:4040
+
+  -- .env values (already set) --
+  PUBLIC_API_BASE=https://your-domain.ngrok-free.dev
+  HUBSPOT_REDIRECT_URI=https://your-domain.ngrok-free.dev/api/auth/callback
+```
+
+---
+
+### Step 6: Open Wix Dashboard
+
+1. In the **Wix CLI window** (Window 3), you will see:
+```
+Current Dev Site: Dev Sitex1134354643 (Press C to switch)
+
+Press a number key to open a dashboard page:
+  ›  1 - HubSpot Integration (/)
+```
+
+2. **Press `1`** on your keyboard
+
+3. This will open your browser at:
+```
+https://manage.wix.com/dashboard/.../app/...
+```
+
+4. You will see the **HubSpot Integration** app inside your Wix dashboard:
+
+```
+┌─────────────────────────────────────────┐
+│  Wix Dashboard                          │
+│  ┌─────────────────────────────────┐    │
+│  │  HubSpot Integration App        │    │
+│  │  ┌─────┬─────────┬───────────┐  │    │
+│  │  │Connect│ Mapping │ Sync │ Leads│  │    │
+│  │  └─────┴─────────┴───────────┘  │    │
+│  │                                  │    │
+│  │  [Connect HubSpot] Button        │    │
+│  │                                  │    │
+│  └─────────────────────────────────┘    │
+└─────────────────────────────────────────┘
+```
+
+---
+
+### Step 7: Connect HubSpot
+
+1. Click on the **"Connect HubSpot"** button
+2. A popup will open asking you to login to HubSpot
+3. Authorize the app
+4. You will see ✅ **"Connected"** status
+
+---
+
+## 📝 How to Update Forms
+
+### Where Are the Forms?
+
+The **Lead Capture Form** is located at:
+```
+src/dashboard/form/LeadCaptureForm.tsx
+```
+
+### How to Edit the Form
+
+1. **Open the file:**
+   ```
+   src/dashboard/form/LeadCaptureForm.tsx
+   ```
+
+2. **Find the form fields** (around the middle of the file):
+   ```tsx
+   <FormField label="First Name" required>
+     <Input value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+   </FormField>
+   ```
+
+3. **Add a new field** (example - adding "Job Title"):
+   ```tsx
+   // Add state at the top
+   const [jobTitle, setJobTitle] = useState('');
+   
+   // Add form field in the JSX
+   <FormField label="Job Title">
+     <Input value={jobTitle} onChange={(e) => setJobTitle(e.target.value)} />
+   </FormField>
+   
+   // Include in the submit handler
+   body: JSON.stringify({
+     firstName,
+     lastName,
+     email,
+     phone,
+     company,
+     jobTitle,  // ← Add this
+     utmParams,
+   })
+   ```
+
+4. **Update the API handler** to receive the new field:
+   ```
+   src/pages/api/forms/submit.ts
+   ```
+   
+   Add the new field to the HubSpot properties:
+   ```typescript
+   properties: {
+     firstname: data.firstName,
+     lastname: data.lastName,
+     email: data.email,
+     phone: data.phone,
+     company: data.company,
+     jobtitle: data.jobTitle,  // ← Add this
+     ...
+   }
+   ```
+
+5. **Save the files** — The Wix CLI (Window 3) will automatically reload the dashboard!
+
+### All Form-Related Files
+
+| File | Purpose |
+|------|---------|
+| `src/dashboard/form/LeadCaptureForm.tsx` | Frontend form UI (what users see) |
+| `src/pages/api/forms/submit.ts` | Backend API that receives form data |
+| `src/backend/forms/form-handler.ts` | Logic to create/update HubSpot contact |
+
+### Dashboard Tabs Location
+
+All dashboard pages are in:
+```
+src/dashboard/
+├── pages/page.tsx              ← Main tabbed layout
+├── connect/ConnectPage.tsx     ← "Connect" tab content
+├── mapping/FieldMappingTable.tsx ← "Field Mapping" tab
+├── status/SyncStatus.tsx       ← "Sync Status" tab
+├── form/LeadCaptureForm.tsx    ← "Lead Capture" tab
+└── leads/LeadList.tsx          ← "Leads" tab
+```
+
+**To add a new tab:**
+1. Create a new component file (e.g., `src/dashboard/analytics/AnalyticsPage.tsx`)
+2. Add the tab in `src/dashboard/pages/page.tsx`
+3. The new tab will automatically appear in the dashboard
 
 ---
 
@@ -283,7 +442,7 @@ Add engagement note with full context
 ```
 hub-spot-integration/
 ├── scripts/
-│   ├── start-dev.ps1          ← One-command dev startup
+│   ├── start-dev.ps1          ← One-command dev startup (RUN THIS!)
 │   ├── dev-proxy.mjs          ← Unifies :5173 + :4321 → :5175
 │   ├── api-dev-server.mjs     ← Standalone API server (Node 20)
 │   ├── dev-store.mjs          ← File-based JSON store (dev)
@@ -319,7 +478,7 @@ hub-spot-integration/
 │   │   ├── mappings/index.ts
 │   │   └── leads/index.ts
 │   └── extensions.ts              ← Wix CLI entry point
-├── .env                           ← Environment variables
+├── .env                           ← Environment variables (YOU EDIT THIS!)
 ├── API_PLAN.md                    ← Detailed API documentation
 └── README.md                      ← This file
 ```
@@ -430,4 +589,3 @@ For issues or questions:
 1. Check `API_PLAN.md` for endpoint details
 2. Review sync logs in the **Sync Status** tab
 3. Check ngrok status at `http://127.0.0.1:4040`
-

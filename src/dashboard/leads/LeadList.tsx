@@ -45,10 +45,7 @@ const LeadList: FC = () => {
   });
   const [saving, setSaving] = useState(false);
 
-  let baseUrl = (import.meta.env as Record<string, unknown>).PUBLIC_API_BASE as string;
-  if (!baseUrl) {
-    baseUrl = 'https://quilt-irregular-squabble.ngrok-free.dev';
-  }
+  const baseUrl = (import.meta.env as Record<string, unknown>).PUBLIC_API_BASE as string || '';
 
   const fetchLeads = async () => {
     setLoading(true);

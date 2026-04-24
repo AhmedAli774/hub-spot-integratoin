@@ -1,0 +1,51 @@
+{
+  "1": {
+    "id": "1",
+    "wixField": "primaryInfo.email",
+    "hubspotProperty": "email",
+    "direction": "bidirectional",
+    "required": true
+  },
+  "2": {
+    "id": "2",
+    "wixField": "primaryInfo.phone",
+    "hubspotProperty": "phone",
+    "direction": "bidirectional",
+    "required": false
+  },
+  "3": {
+    "id": "3",
+    "wixField": "name.first",
+    "hubspotProperty": "firstname",
+    "direction": "bidirectional",
+    "required": false
+  },
+  "4": {
+    "id": "4",
+    "wixField": "name.last",
+    "hubspotProperty": "lastname",
+    "direction": "bidirectional",
+    "required": false
+  },
+  "5": {
+    "id": "5",
+    "wixField": "addresses[0].city",
+    "hubspotProperty": "city",
+    "direction": "wix-to-hubspot",
+    "required": false
+  },
+  "6": {
+    "id": "6",
+    "wixField": "addresses[0].country",
+    "hubspotProperty": "country",
+    "direction": "wix-to-hubspot",
+    "required": false
+  },
+  "7": {
+    "id": "7",
+    "wixField": "addresses[0].postalCode",
+    "hubspotProperty": "zip",
+    "direction": "wix-to-hubspot",
+    "required": false
+  }
+}

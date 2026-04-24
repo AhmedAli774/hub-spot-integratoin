@@ -28,7 +28,7 @@
     "wix": "wix",
     "build": "wix app build",
     "release": "wix app release",
-    "dev": "wix app dev --origin https://quilt-irregular-squabble.ngrok-free.dev",
+    "dev": "wix app dev",
     "preview": "wix app preview",
     "generate": "wix app generate",
     "logs": "wix app logs",
