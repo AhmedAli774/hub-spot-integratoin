@@ -1,4 +1,5 @@
 import React, { type FC, useEffect, useState } from 'react';
+import { httpClient } from '@wix/essentials';
 import {
   Box,
   Card,
@@ -16,6 +17,7 @@ import {
   TextButton,
 } from '@wix/design-system';
 import { EditSmall, ExternalLinkSmall } from '@wix/wix-ui-icons-common';
+import { apiUrl } from '../lib/api';
 
 interface HubSpotLead {
   id: string;
@@ -45,16 +47,11 @@ const LeadList: FC = () => {
   });
   const [saving, setSaving] = useState(false);
 
-  const baseUrl = (import.meta.env as Record<string, unknown>).PUBLIC_API_BASE as string || '';
-
   const fetchLeads = async () => {
     setLoading(true);
     setError('');
     try {
-      const res = await fetch(`${baseUrl}/api/leads`, {
-        method: 'GET',
-        headers: { 'Content-Type': 'application/json' },
-      });
+      const res = await httpClient.fetchWithAuth(apiUrl('/api/leads'));
       if (!res.ok) {
         throw new Error(`HTTP ${res.status}: ${res.statusText}`);
       }
@@ -96,7 +93,7 @@ const LeadList: FC = () => {
     if (!editingLead) return;
     setSaving(true);
     try {
-      const res = await fetch(`${baseUrl}/api/leads`, {
+      const res = await httpClient.fetchWithAuth(apiUrl('/api/leads'), {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
